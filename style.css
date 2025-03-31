@@ -1,3 +1,13 @@
 body {
     background-color: blueviolet;
 }
+
+#navbar {
+    background-color: cadetblue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2%;
+}
