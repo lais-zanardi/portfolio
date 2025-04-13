@@ -2,12 +2,30 @@ body {
     background-color: blueviolet;
 }
 
-#navbar {
-    background-color: cadetblue;
+header {
+    background-color:darkcyan;
 }
 
-nav {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2%;
+.hero {
+    background-color:cadetblue
+}
+
+.projetos {
+    background-color:aquamarine;
+}
+
+.habilidades {
+    background-color:deepskyblue;
+}
+
+.certificados {
+    background-color: cornflowerblue;
+}
+
+.contato {
+    background-color: steelblue;
+}
+
+footer {
+    background-color: turquoise;
 }
