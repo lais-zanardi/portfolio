@@ -1,21 +1,55 @@
 body {
-    background-color: blueviolet;
+    background-color: #f1f1f1;
 }
 
 header {
-    background-color:darkcyan;
+    background-color: darkcyan;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+p,
+ul {
+    font-family: "DM Serif Text", serif;
+    font-weight: 50;
+    font-style: normal;
+
 }
 
 .hero {
-    background-color:cadetblue
+    background-color: cadetblue;
+    display: grid;
+    grid-template-areas: 'minhaArea minhaArea minhaArea minhaArea';
+    gap: 10px;
+    padding: 10px;
+    align-content: center;
+    justify-items: center;
+}
+
+.hero h1 {
+    grid-area: minhaArea;
+    justify-self: center;
+}
+
+#avatar {
+    width: 75%;
+    height: 75%;
+    object-fit: scale-down;
 }
 
 .projetos {
-    background-color:aquamarine;
+    background-color: aquamarine;
 }
 
 .habilidades {
-    background-color:deepskyblue;
+    background-color: deepskyblue;
 }
 
 .certificados {
