@@ -2,15 +2,42 @@ body {
     background: #00458E;
     background: linear-gradient(180deg, rgba(0, 69, 142, 1) 0%, rgba(0, 3, 40, 1) 100%);
     color: #f1f1f1;
-    /* font-family: "DM Sans", sans-serif; */
 }
 
 header {
     /* background-color: darkcyan; */
 }
 
-html {
-    scroll-behavior: smooth;
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-family: "DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+p {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-top: 0;
+    line-height: 1.5em;
 }
 
 .hero {
@@ -29,32 +56,105 @@ html {
 
 .hero h1 {
     grid-area: nome;
-    color: #f1f2f2;
-    font-family: "DM Serif Display", serif;
-    font-weight: 500;
-    font-size: 3rem;
+    font-size: 4.5rem;
 }
 
 .hero h2 {
     grid-area: olamundo;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-    font-size: 2.5em;
 }
 
 .hero p {
     grid-area: descricao;
-    font-family: "Lora", serif;
-    font-weight: 400;
-    font-size: 1.5em;
-    margin-top: 0;
-    line-height: 1.5em;;
 }
 
 #avatar {
     grid-area: avatar;
     max-width: 250px;
     height: auto;
+}
+
+.projetos {
+    /* height: 100vh; */
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;  /* espaço entre projetos*/
+    padding: 2%;
+}
+
+.projeto-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icone-github {
+    width: 24px;
+    height: 24px;
+    color: #f1f1f1;
+    transition: fill 0.3s ease;
+}
+.projeto-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.codigo-fonte {
+    display: flex;
+    justify-content: center;
+}
+
+#github-icone {
+    color: #f1f1f1;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+#titulo-tecnologias {
+    text-align: center;
+}
+
+.lista-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+  }
+  
+  .tecnologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    width: 80px;
+  }
+
+  .tecnologia img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+  }
+
+#codigo-fonte {
+    text-align: center;
+}
+.habilidades {
+    /* background-color: deepskyblue; */
+}
+
+.certificados {
+    /* background-color: cornflowerblue; */
+}
+
+.contato {
+    /* background-color: steelblue; */
+}
+
+footer {
+    /* background-color: turquoise; */
 }
 
 /* responsividade */
@@ -71,24 +171,21 @@ html {
     #avatar {
         margin: 1rem auto 0;
     }
-}
 
-.projetos {
-    /* background-color: aquamarine; */
-}
+    .projeto-header {
+        flex-direction: row;
+    }
 
-.habilidades {
-    /* background-color: deepskyblue; */
-}
-
-.certificados {
-    /* background-color: cornflowerblue; */
-}
-
-.contato {
-    /* background-color: steelblue; */
-}
-
-footer {
-    /* background-color: turquoise; */
+    .lista-tecnologias {
+        gap: 1rem;
+      }
+      
+      .tecnologia {
+        width: 70px;
+      }
+      
+      .tecnologia img {
+        width: 35px;
+        height: 35px;
+      }
 }
