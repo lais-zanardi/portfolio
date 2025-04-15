@@ -35,7 +35,7 @@ h4 {
 p {
     font-family: "Lora", serif;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.2rem;
     margin-top: 0;
     line-height: 1.5em;
 }
@@ -74,7 +74,6 @@ p {
 }
 
 .projetos {
-    /* height: 100vh; */
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;  /* espaço entre projetos*/
@@ -97,6 +96,11 @@ p {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px); /* Efeito de vidro fosco (opcional) */
+    border-radius: 12px; /* Bordas arredondadas */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
+    padding: 1.5rem;
 }
 
 .codigo-fonte {
