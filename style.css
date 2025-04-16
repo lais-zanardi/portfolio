@@ -154,14 +154,33 @@ p {
     padding: 1.5rem;
 }
 
-.contato {
-    /* background-color: steelblue; */
-}
-
 footer {
-    /* background-color: turquoise; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    
 }
 
+.redes-sociais {
+    display: flex;
+    gap: 2rem;
+}
+
+.redes-sociais-icone {
+    width: 28px;
+    height: 28px;
+    fill: #f1f1f1;
+}
+
+.copyright {
+    font-size: .8rem;
+    color:  rgba(255, 255, 255, 0.6);
+    margin: 0;
+}
 /* responsividade */
 @media (max-width: 768px) {
     .hero {
