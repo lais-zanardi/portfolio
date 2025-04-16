@@ -2,10 +2,27 @@ body {
     background: #00458E;
     background: linear-gradient(180deg, rgba(0, 69, 142, 1) 0%, rgba(0, 3, 40, 1) 100%);
     color: #f1f1f1;
+    padding: 2%;
 }
 
-header {
-    /* background-color: darkcyan; */
+nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    font-family: "DM Sans", sans-serif;
+    font-size: .9rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 1rem;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h1 {
