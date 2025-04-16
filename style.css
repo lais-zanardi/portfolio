@@ -97,7 +97,7 @@ p {
     grid-template-columns: 1fr;
     gap: 1rem;
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(8px); /* Efeito de vidro fosco (opcional) */
+    backdrop-filter: blur(8px); /* Efeito de vidro fosco */
     border-radius: 12px; /* Bordas arredondadas */
     border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
     padding: 1.5rem;
@@ -145,12 +145,13 @@ p {
 #codigo-fonte {
     text-align: center;
 }
-.habilidades {
-    /* background-color: deepskyblue; */
-}
 
-.certificados {
-    /* background-color: cornflowerblue; */
+.item-certificados {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(8px); 
+    border-radius: 12px; 
+    border: 1px solid rgba(255, 255, 255, 0.1); 
+    padding: 1.5rem;
 }
 
 .contato {
