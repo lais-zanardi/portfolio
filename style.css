@@ -1,8 +1,8 @@
 body {
     background: #00458E;
-    background: linear-gradient(180deg, rgba(0, 69, 142, 1) 0%, rgba(0, 3, 40, 1) 100%);
+    background: linear-gradient(180deg, rgba(0, 69, 142, 1) 0%, #000328 100%);
     color: #f1f1f1;
-    padding: 2%;
+    /* padding: 2%; */
 }
 
 nav {
@@ -60,12 +60,12 @@ p {
 .hero {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto auto;
     grid-template-rows: auto auto 1fr;
     grid-template-areas: 
-    "nome nome"
-    "olamundo avatar"
-    "descricao avatar";
+    "nome nome nome"
+    "olamundo avatar avatar"
+    "descricao avatar avatar";
     align-items: start;
     gap: 5%;
     padding: 2%;
@@ -82,6 +82,7 @@ p {
 
 .hero p {
     grid-area: descricao;
+    text-align: justify;
 }
 
 #avatar {
@@ -90,17 +91,39 @@ p {
     height: auto;
 }
 
+.competencias {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10vh;
+}
+
 .projetos {
+    min-height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 3rem;  /* espaço entre projetos*/
-    padding: 2%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    gap: 2%;
+    padding: 1%;
+    /* margin-top: -10vh; */
+    /* background: #000328;
+    background: linear-gradient(180deg, rgba(0, 3, 40, 1) 0%, rgba(253, 29, 29, 1) 95%, rgba(252, 176, 69, 1) 100%); */
+
+}
+
+.projetos > h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 0%;
+    margin-top: 2%;
 }
 
 .projeto-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
+    padding: 0%;
+    margin-bottom: 0px;
 }
 
 .icone-github {
@@ -112,14 +135,45 @@ p {
 .projeto-item {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-row-start: 2;
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(8px); /* Efeito de vidro fosco */
     border-radius: 12px; /* Bordas arredondadas */
     border: 1px solid rgba(255, 255, 255, 0.1); /* Borda sutil */
     padding: 1.5rem;
+    row-gap: -100px;
 }
 
+.projeto-item p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.75rem;
+}
+
+.projeto-descricao {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1%;
+    margin-bottom: 2%;
+}
+
+#api-1sem {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2 / span 2;
+}
+
+#site-pessoal {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 2 / span 1;
+}
+
+#ms-imobiliaria {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 3 / span 1;
+}
 .codigo-fonte {
     display: flex;
     justify-content: center;
@@ -133,6 +187,7 @@ p {
 
 #titulo-tecnologias {
     text-align: center;
+    padding: 0%;
 }
 
 .lista-tecnologias {
@@ -161,6 +216,10 @@ p {
 
 #codigo-fonte {
     text-align: center;
+}
+
+.certificados {
+    height: 100vh;
 }
 
 .item-certificados {
