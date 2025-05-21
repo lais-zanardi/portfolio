@@ -14,33 +14,23 @@
 
 <body>
     <header>
-        <!-- <nav id="sidebar"> -->
-            <!-- <ul id="sidebar-items">
-                <li class="sidebar-item">
-                    <a href="#sobre-mim">
-                        <i class="fa-light fa-bars"></i>
-                        <span class="item-descricao">Sobre mim</span>
-                    </a>
-                </li>
+        <!-- Menu -->
+        <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#sobre-mim" class="menu-item">Sobre</a></li>
+                <li><a href="#competencias" class="menu-item">Competências</a></li>
+                <li><a href="#projetos" class="menu-item">Projetos</a></li>
+                <li><a href="#certificados" class="menu-item">Certificados</a></li>
+                <li><a href="curriculo.pdf" target="_blank" rel="noopener" class="menu-item">Currículo</a></li>
             </ul>
-            <ul id="sidebar-items">
-                <li class="sidebar-item">
-                    <a href="#projetos">
-                        <i class="fa-light fa-bars"></i>
-                        <span class="item-descricao">Sobre mim</span>
-                    </a>
-                </li>
-            </ul> -->
-            <!-- <a href="#sobre-mim" class="nav-link">Sobre mim</a>
-            <a href="#projetos" class="nav-link">Projetos</a>
-            <a href="#certificados" class="nav-link">Certificados</a>
-        </nav> -->
+        </nav>
     </header>
 
     <main>
         <!--Hero-->
-        <section class="hero" >
-            <h1 id="sobre-mim">Laís Zanardi Inocêncio</h1>
+        <section class="hero" id="sobre-mim">
+            <h1>Laís Zanardi Inocêncio</h1>
             <h2>Olá, mundo! </h2>
             <p>
                 Sou estudante de Desenvolvimento de Software Multiplataforma na FATEC, apaixonada por tecnologia,
@@ -53,19 +43,38 @@
         </section>
 
         <!-- Competências -->
-         <section class="competencias">
-            <h2>Competências</h2>
-            <ul>Emocionais
-                <li>Perfil analítico</li>
-            </ul>
-            <ul>Técnicas
-                <li>Java</li>
-                <li>Python</li>
-            </ul>
+         
+         <section class="competencias" id="competencias">
+            <h2 id="competencia-titulo">Competências</h2>
+            <div class="competencia-bloco" id="competencia-e">
+                <h3>Competências Emocionais</h3>
+                <ul>
+                    <li><i class="fas fa-lightbulb"></i> Vontade constante de aprender</li>
+                    <li><i class="fas fa-users"></i> Facilidade para trabalhar em equipe</li>
+                    <li><i class="fas fa-brain"></i> Resolução de problemas com pensamento analítico</li>
+                    <li><i class="fas fa-rocket"></i> Proatividade e iniciativa</li>
+                    <li><i class="fas fa-calendar-check"></i> Organização e gestão do tempo</li>
+                    <li><i class="fas fa-comments"></i> Comunicação clara e objetiva</li>
+                    <li><i class="fas fa-sync-alt"></i> Flexibilidade diante de mudanças</li>
+                </ul>
+            </div>
+            <div class="competencia-bloco" id="competencia-t">
+                <h3>Competências Técnicas</h3>
+                <ul>
+                    <li><i class="fab fa-html5"></i> HTML5, CSS3 e JavaScript (ES6+)</li>
+                    <li><i class="fab fa-git-alt"></i> Git e GitHub</li>
+                    <li><i class="fa-brands fa-java"></i> Java e Springboot</li>
+                    <li><i class="fa-brands fa-python"></i> Python</li>
+                    <li><i class="fas fa-database"></i> MongoDB e MySQL</li>
+                    <li><i class="fas fa-plug"></i> Consumo de APIs REST</li>
+                    <li><i class="fas fa-mobile-alt"></i> Design responsivo e noções de UI/UX</li>
+                    <li><i class="fa-brands fa-js"></i> Familiaridade com JavaScript</li>
+                </ul>
+            </div>
          </section>
 
         <!--Projetos-->
-        <section class="projetos">
+        <section class="projetos" id="projetos">
             <h2>Projetos</h2>
 
             <!--API-->
@@ -211,29 +220,19 @@
             
         </section>
 
-
-        <section class="certificados">
-            <h2 id="certificados">Certificados</h2>
-            <!--Java-->
+        <h2 style="padding: 2%;">Certificados</h2>
+        <section class="certificados" id="certificados">
             <article class="item-certificados">
                 <h3>Programa &lt;Dev&gt;ª</h3>
-                <p>Iniciativa da Ada Tech em parceria com a B3 para formação exclusiva em Java para mulheres.</p>
+                <p>O programa &lt;Dev&gt;ª foi uma iniciativa da B3 em parceria com a Ada Tech, voltada para a formação de mulheres na área de tecnologia, com foco em desenvolvimento Back-End Java. com o objetivo de promover a inclusão e diversidade no setor tecnológico.</p>
+                <a href="https://drive.google.com/file/d/1Il9SqAA7qnlrNKvAmMMxEZEIiTCB5xSq/view?usp=drive_link" target="_blank" rel="noopener">🔗 Link do certificado</a>
+            </article>
+             <article class="item-certificados">
+                <h3>Escola de Inovadores</h3>
+                <p>A Escola de Inovadores é um curso de extensão gratuito em empreendedorismo, promovido pela Inova CPS — assessoria de inovação do Centro Paula Souza (CPS). Seu objetivo é capacitar participantes a transformar ideias inovadoras em modelos de negócios sustentáveis, por meio de uma trilha prática que inclui mentorias, desenvolvimento de projetos e exposição de propostas.</p>
             </article>
         </section>
 
-        <!-- <section class="contato">
-            <h2>Me envie uma mensagem!</h2>
-            <h3>Você tem uma proposta, pergunta ou apenas quer dizer oi? Vá em frente.</h3>
-            <form action="">
-                <label for="nome">Seu nome</label>
-                <input type="text" id="nome" name="nome"><br><br>
-                <label for="email">Seu e-mail</label>
-                <input type="text" id="email" name="email"><br><br>
-                <label for="mensagem">Sua mensagem</label>
-                <input type="text" id="mensagem" name="mensagem"><br><br>
-                <input type="submit" value="Enviar">
-            </form>
-        </section> -->
     </main>
 
     <footer>
