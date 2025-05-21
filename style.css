@@ -403,6 +403,7 @@ p {
     }
     #avatar {
         margin: 1rem auto 0;
+        border-radius: 50%;
     }
 
     .projetos, .certificados {
